@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>FAKEBILL - Xác thực</title>
     <style>
         * {
             padding: 0;
@@ -27,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            overflow: hidden;
         }
 
         #banner {
@@ -231,7 +232,7 @@
 
         .container-noti a {
             color: #2A53C2;
-            text-decoration: none;
+            /* text-decoration: none; */
             margin-top: 30px;
         }
 
@@ -246,7 +247,7 @@
         /* Responsive */
         @media (max-width: 767px) {
             .square {
-                display: none;
+                /* display: none; */
             }
 
             main {
@@ -262,7 +263,7 @@
             }
 
             #form-container {
-                padding: 100px 10px 0;
+                padding: 100px 20px 0;
             }
 
             .container-logo {
@@ -301,7 +302,7 @@
 
             .label-input input:not(:placeholder-shown) + label,
             .label-input input:focus + label {
-                top: -8px;
+                top: -11px;
                 font-size: 10px;
             }
         }
