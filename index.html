@@ -142,7 +142,7 @@
 
         .label-input input {
             position: relative;
-            color: rgb(255, 0, 0);
+            color: rgb(255 100 100);
             width: 100%;
             padding: var(--pd-16-24);
             background: transparent;
@@ -163,7 +163,7 @@
             position: absolute;
             width: 100%;
             height: 68%;
-            background: linear-gradient(var(--angle), rgb(175, 0, 0), transparent 10%);
+            background: linear-gradient(var(--angle), rgb(128 0 0), transparent 10%);
             z-index: 0;
             bottom: 32px;
             left: 0;
@@ -176,7 +176,7 @@
 
         .label-input:has(input:not(:placeholder-shown))::before,
         .label-input:has(input:focus)::before {
-            animation: spin 1s linear infinite;
+            animation: spin 1.2s linear infinite;
         }
 
         .label-input input:focus-visible {
@@ -212,7 +212,7 @@
         #form-container button {
             width: 100%;
             padding: 16px 24px;
-            font-size: 20px;
+            font-size: 16px;
             background-color: #222;
             border: none;
             border-radius: 5px;
@@ -231,8 +231,9 @@
         }
 
         .container-noti a {
-            color: #2A53C2;
-            /* text-decoration: none; */
+            background: linear-gradient(150deg, rgb(73, 73, 255), rgb(255, 60, 60));
+            background-clip: text;
+            color: transparent  ;
             margin-top: 30px;
         }
 
